@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortexis Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Cortexis<span>Hub</span></a>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#blog">Resources</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn. Build. Grow with Cortexis Learning Hub</h1>
+                <p>Master in-demand tech skills with our project-based learning approach and advance your career in the digital world.</p>
+                <a href="#services" class="btn">Start Learning</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Learning Modules</h2>
+                <p>Explore our comprehensive curriculum designed for the modern tech industry</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Master HTML, CSS, JavaScript and modern frameworks to build responsive, dynamic websites and applications.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Learn design principles, prototyping, and user research to create intuitive and beautiful digital experiences.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <p>Understand CI/CD pipelines, cloud infrastructure, and automation tools to streamline development processes.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Master SEO, social media marketing, analytics, and growth strategies to drive business success online.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section tools-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Interactive Tools</h2>
+                <p>Handy utilities to assist in your learning journey</p>
+            </div>
+            <div class="tools-container">
+                <div class="tool calculator">
+                    <h3>Simple Calculator</h3>
+                    <input type="text" class="calc-display" value="0" readonly>
+                    <div class="calc-buttons">
+                        <button class="calc-btn">7</button>
+                        <button class="calc-btn">8</button>
+                        <button class="calc-btn">9</button>
+                        <button class="calc-btn operator">÷</button>
+                        <button class="calc-btn">4</button>
+                        <button class="calc-btn">5</button>
+                        <button class="calc-btn">6</button>
+                        <button class="calc-btn operator">×</button>
+                        <button class="calc-btn">1</button>
+                        <button class="calc-btn">2</button>
+                        <button class="calc-btn">3</button>
+                        <button class="calc-btn operator">-</button>
+                        <button class="calc-btn">0</button>
+                        <button class="calc-btn">.</button>
+                        <button class="calc-btn operator">=</button>
+                        <button class="calc-btn operator">+</button>
+                        <button class="calc-btn clear-btn">C</button>
+                    </div>
+                </div>
+                <div class="tool task-tracker">
+                    <h3>Task Tracker</h3>
+                    <div class="task-input-container">
+                        <input type="text" id="taskInput" placeholder="Enter a new task...">
+                        <button id="addTaskBtn" class="btn">Add Task</button>
+                    </div>
+                    <ul class="task-list">
+                        <li class="task-item">
+                            <span>Complete JavaScript module</span>
+                            <i class="fas fa-trash delete-task"></i>
+                        </li>
+                        <li class="task-item">
+                            <span>Review UX design principles</span>
+                            <i class="fas fa-trash delete-task"></i>
+                        </li>
+                        <li class="task-item">
+                            <span>Work on final project</span>
+                            <i class="fas fa-trash delete-task"></i>
+                        </li>
+                    </ul>
+                    <div class="task-count">Total tasks: <span id="taskCounter">3</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Profile Section -->
+    <section class="section user-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Learners</h2>
+                <p>Join thousands of students advancing their careers with Cortexis</p>
+            </div>
+            <div class="user-profile">
+                <img src="12.jpg" alt="User profile" class="user-img">
+                <h3 class="user-name">Arsalan Ali</h3>
+                <p class="user-email">wwwarsalanali@gmail.com</p>
+                <p>"Cortexis helped me transition from marketing to web development in just 6 months!"</p>
+                <button id="generateUserBtn" class="btn">Generate New User</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Learning Resources</h2>
+                <p>Insights and articles to support your educational journey</p>
+            </div>
+            <div class="blog-article">
+                <img src="1.png" alt="Web development" class="article-img">
+                <div class="article-content">
+                    <h3>Why Web Skills Matter in 2025</h3>
+                    <div class="article-meta">
+                        <span><i class="far fa-user"></i> Alex Thompson</span>
+                        <span><i class="far fa-calendar"></i> June 15, 2023</span>
+                        <span><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <p>The digital landscape is evolving at an unprecedented pace, and web development skills have become essential not just for developers but for professionals across all industries.</p>
+                    <p>By 2025, it's estimated that over 70% of jobs will require some level of web literacy, from content management systems to basic HTML and CSS for marketing professionals.</p>
+                    <p>At Cortexis, we focus on teaching practical, future-proof skills that will remain relevant as technology continues to advance. Our project-based approach ensures that you're not just learning theory, but building a portfolio of real-world applications.</p>
+                    <p>Whether you're looking to start a new career, advance in your current role, or simply understand the digital world better, web skills are no longer optional—they're essential.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our platform</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>What's the cost of the learning modules?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer both free and premium modules. Individual courses range from $49-$99, or you can get full access to all courses through our monthly subscription ($29/month) or annual plan ($249/year).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer certificates upon completion?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer verifiable digital certificates for all completed premium courses. These certificates can be shared on LinkedIn and added to your resume to showcase your skills to employers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What kind of support is available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide multiple support channels including community forums, weekly live Q&A sessions, and direct messaging with course instructors for premium members. Our average response time is under 4 hours during business days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I access the courses on mobile devices?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our platform is fully responsive and works on smartphones, tablets, and desktops. We also have a mobile app available for iOS and Android for offline learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Send Us Feedback</h2>
+                <p>We'd love to hear about your experience with our platform</p>
+            </div>
+            <div class="contact-form">
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your name">
+                        <div class="error" id="nameError">Please enter your name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your email">
+                        <div class="error" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    <div class="form-group">
+                        <label>Rating *</label>
+                        <div class="rating">
+                            <i class="far fa-star star" data-value="1"></i>
+                            <i class="far fa-star star" data-value="2"></i>
+                            <i class="far fa-star star" data-value="3"></i>
+                            <i class="far fa-star star" data-value="4"></i>
+                            <i class="far fa-star star" data-value="5"></i>
+                        </div>
+                        <input type="hidden" id="rating" value="0">
+                        <div class="error" id="ratingError">Please select a rating</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Feedback *</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Your message..."></textarea>
+                        <div class="error" id="messageError">Please enter your feedback message</div>
+                    </div>
+                    <button type="submit" class="btn">Submit Feedback</button>
+                </form>
+                <div class="success-message" id="successMessage">
+                    Thank you for your feedback! We appreciate you taking the time to help us improve.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">CortexisHub</div>
+                    <p>Empowering learners with practical skills for the digital economy. Join thousands of students advancing their careers with our project-based approach.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Learning Modules</a></li>
+                        <li><a href="#tools">Interactive Tools</a></li>
+                        <li><a href="#blog">Resources</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@cortexishub.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education St, Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Cortexis Learning Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
